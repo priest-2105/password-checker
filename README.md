@@ -17,7 +17,7 @@
 ## File Structure
 
 - `index.html`: The main HTML file containing the structure of the web page.
-- `style.css`: (If separated) Custom styles for the web page.
+- `style.css`:  Custom styles for the web page.
 - `super.js`: The JavaScript file handling password visibility and strength checking.
 - `web-ico.png`: The favicon for the web page.
 - `README.md`: Project documentation file.
@@ -53,4 +53,4 @@
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/priest-2105/password-strength-checker.git
+   git clone https://github.com/priest-2105/password-checker
