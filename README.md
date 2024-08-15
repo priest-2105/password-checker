@@ -1,83 +1,56 @@
-div class="container">
-        <h1>Password Strength Checker Documentation</h1>
+# Password Strength Checker Documentation
 
-        <h2>Project Overview</h2>
-        <p><strong>Project Name:</strong> Password Strength Checker</p>
-        <p><strong>Author:</strong> Fawaz Bailey</p>
-        <p><strong>Description:</strong> A web-based tool that checks the strength of a password based on predefined
-            criteria like length, presence of uppercase letters, lowercase letters, numbers, and special characters. The
-            tool provides real-time feedback to users, helping them create strong and secure passwords.</p>
+## Project Overview
 
-        <h2>Technologies Used</h2>
-        <ul>
-            <li>HTML5: For structuring the web page.</li>
-            <li>CSS3: For styling the web page.</li>
-            <li>JavaScript: For adding interactivity and handling password strength logic.</li>
-            <li>Bootstrap Icons: For using icons to enhance UI.</li>
-            <li>GitHub: For version control and project hosting.</li>
-        </ul>
+- **Project Name:** Password Strength Checker
+- **Author:** Fawaz Bailey
+- **Description:** A web-based tool that checks the strength of a password based on predefined criteria like length, presence of uppercase letters, lowercase letters, numbers, and special characters. The tool provides real-time feedback to users, helping them create strong and secure passwords.
 
-        <h2>File Structure</h2>
-        <ul>
-            <li><code>index.html</code>: The main HTML file containing the structure of the web page.</li>
-            <li><code>style.css</code>: (If separated) Custom styles for the web page.</li>
-            <li><code>super.js</code>: The JavaScript file handling password visibility and strength checking.</li>
-            <li><code>web-ico.png</code>: The favicon for the web page.</li>
-            <li><code>README.md</code>: Project documentation file.</li>
-        </ul>
+## Technologies Used
 
-        <h2>Features</h2>
-        <ul>
-            <li><strong>Password Input Field:</strong> Users can enter a password, which is validated against several
-                criteria. Password visibility can be toggled using eye icons.</li>
-            <li><strong>Password Strength Indicator:</strong> Real-time feedback is given on password strength. Different
-                messages are displayed depending on the strength of the password.</li>
-            <li><strong>Password Guidelines:</strong> A popup containing guidelines for creating a strong password appears
-                when the information icon is hovered over.</li>
-            <li><strong>Footer:</strong> Contains author information and a link to the GitHub profile.</li>
-        </ul>
+- **HTML5:** For structuring the web page.
+- **CSS3:** For styling the web page.
+- **JavaScript:** For adding interactivity and handling password strength logic.
+- **Bootstrap Icons:** For using icons to enhance UI.
+- **GitHub:** For version control and project hosting.
 
-        <h2>Implementation Details</h2>
+## File Structure
 
-        <h3>Password Visibility Toggle</h3>
-        <p><strong>JavaScript Code:</strong></p>
-        <ul>
-            <li><code>openPassWordIcon</code> and <code>closePassWordIcon</code> are used to toggle the password input
-                field between text and password types.</li>
-            <li>Event listeners are attached to handle the visibility toggle.</li>
-        </ul>
+- `index.html`: The main HTML file containing the structure of the web page.
+- `style.css`: (If separated) Custom styles for the web page.
+- `super.js`: The JavaScript file handling password visibility and strength checking.
+- `web-ico.png`: The favicon for the web page.
+- `README.md`: Project documentation file.
 
-        <h3>Password Strength Evaluation</h3>
-        <p><strong>JavaScript Code:</strong></p>
-        <ul>
-            <li>The password is evaluated based on its length, presence of uppercase letters, lowercase letters, numbers,
-                symbols, and spaces.</li>
-            <li>Appropriate feedback is displayed depending on whether the password meets the strength criteria.</li>
-        </ul>
+## Features
 
-        <h3>Strength Level Display</h3>
-        <p><strong>JavaScript Code:</strong></p>
-        <ul>
-            <li>Different strength levels (weak, medium, strong) are displayed as the user types the password.</li>
-        </ul>
+- **Password Input Field:** Users can enter a password, which is validated against several criteria. Password visibility can be toggled using eye icons.
+- **Password Strength Indicator:** Real-time feedback is given on password strength. Different messages are displayed depending on the strength of the password.
+- **Password Guidelines:** A popup containing guidelines for creating a strong password appears when the information icon is hovered over.
+- **Footer:** Contains author information and a link to the GitHub profile.
 
-        <h2>How to Run</h2>
-        <ul>
-            <li><strong>Clone the repository:</strong></li>
-            <code>git clone https://github.com/priest-2105/password-strength-checker.git</code>
-            <li><strong>Open the <code>index.html</code> file in a browser to use the Password Strength Checker.</strong></li>
-        </ul>
+## Implementation Details
 
-        <h2>Future Improvements</h2>
-        <ul>
-            <li><strong>Improved UI/UX:</strong> Enhancements to the design and user experience.</li>
-            <li><strong>Localization:</strong> Support for multiple languages.</li>
-            <li><strong>Accessibility:</strong> Ensure the tool is accessible to users with disabilities.</li>
-        </ul>
+### Password Visibility Toggle
 
-        <h2>License</h2>
-        <p>This project is licensed under the MIT License - see the <code>LICENSE.md</code> file for details.</p>
+- **JavaScript Code:**
+  - `openPassWordIcon` and `closePassWordIcon` are used to toggle the password input field between text and password types.
+  - Event listeners are attached to handle the visibility toggle.
 
-        <div class="footer">
-            <p>&copy; Created by <a href="https://github.com/priest-2105" target="_blank">Fawaz Bailey</a>. All rights reserved.</p>
-        </div>
+### Password Strength Evaluation
+
+- **JavaScript Code:**
+  - The password is evaluated based on its length, presence of uppercase letters, lowercase letters, numbers, symbols, and spaces.
+  - Appropriate feedback is displayed depending on whether the password meets the strength criteria.
+
+### Strength Level Display
+
+- **JavaScript Code:**
+  - Different strength levels (weak, medium, strong) are displayed as the user types the password.
+
+## How to Run
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/priest-2105/password-strength-checker.git
