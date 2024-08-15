@@ -1,6 +1,14 @@
 const openPassWordIcon = document.getElementById('openPassword');
 const closePassWordIcon = document.getElementById('closePassword');
 const passwordInput = document.getElementById('passwordInput');
+const copyclipboard = document.getElementById('copyclipboard');
+const copyclipboardcheck = document.getElementById('copyclipboardcheck');
+
+
+copyclipboard.style.display = 'none';
+copyclipboardcheck.style.display = 'none';
+
+
 
 // Event listener for the reveal password icon 
 openPassWordIcon.addEventListener('click', () => {
@@ -53,11 +61,29 @@ function evaluatePasswordStrength() {
         updateStrengthLevel('Password Cannot include Space !!', 'danger');
     } else if (password.length >= 15 && hasUpperCase && hasLowerCase && hasNumber && hasSymbol) {
         updateStrengthLevel('Password is strong !!', 'success');
+        copyclipboard.style.display = 'block';    
     } else if (password.length <= 8 || !hasUpperCase || !hasLowerCase || !hasNumber || !hasSymbol) {
         updateStrengthLevel('Password is very weak !!', 'danger');
     } else {
         updateStrengthLevel('Password is not strong enough !!', 'warning');
     }
+
+
+    
+
+    copyclipboard.onclick = () => {
+        copyclipboardcheck.style.display = 'block';
+        copyclipboard.style.display = 'none';
+
+        passwordInput.select();
+        passwordInput.setSelectionRange(0, 99999);
+        
+        document.execCommand('copy')
+
+    }
+
+
+
 }
 
 // Attach the event listener for input events
