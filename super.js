@@ -42,10 +42,10 @@ openPassWordIcon.style.display = 'block';
 
 passwordInput.addEventListener('change', () => {
 
-    const hasUpperCase = /[A-Z]/.text(password);
-    const hasLowerCase = /[a-z]/.text(password);
-    const hasNumber = /\d/.text(password);
-    const hasSymbol = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.text(password);
+    const hasUpperCase = /[A-Z]/.test(passwordInput.password);
+    const hasLowerCase = /[a-z]/.test(passwordInput.password);
+    const hasNumber = /\d/.test(passwordInput.password);
+    const hasSymbol = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(passwordInput.password);
 
     console.log(hasLowerCase);
     
