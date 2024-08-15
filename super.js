@@ -55,12 +55,42 @@ passwordInput.addEventListener('change', () => {
         console.log('it has symbol ', hasSymbol);
         console.log('it has space',hasSpace);
 
-        if (passwordInput.value.length >= 12 ){
-        document.getElementById('characterMark').innerHTML = '✔';   
-        }else if(hasUpperCase ){
-        document.getElementById('uppercaseMark').innerHTML = '✔';   
+        const characterMark = document.getElementById('characterMark');
+        const uppercaseMark = document.getElementById('uppercaseMark');
+        const lowercaseMark = document.getElementById('lowercaseMark');
+        const specialcharacterMark = document.getElementById('specialcharacterMark');
+        const numberMark = document.getElementById('numberMark');
+        
+        
+        if (passwordInput.value.length >= 12) {
+            characterMark.innerHTML = '✔';
+        } else {
+            characterMark.innerHTML = ' ';
         }
-
+        
+        if (hasUpperCase) {
+            uppercaseMark.innerHTML = '✔';
+        } else {
+            uppercaseMark.innerHTML = ' ';
+        }
+        
+        if (hasLowerCase) {
+            lowercaseMark.innerHTML = '✔';
+        } else {
+            lowercaseMark.innerHTML = ' ';
+        }
+        
+        if (hasSymbol) {
+            specialcharacterMark.innerHTML = '✔';
+        } else {
+            specialcharacterMark.innerHTML = ' ';
+        }
+        
+        if (hasNumber) {
+            numberMark.innerHTML = '✔';
+        } else {
+            numberMark.innerHTML = ' ';
+        }
     
         
 
