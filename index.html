@@ -114,6 +114,49 @@
         }
 
 
+        .bi-info-circle{
+            margin-right: 20px;
+        }
+
+        .bi-info-circle:hover ~ .password-info{
+            display: block;
+            transition-timing-function: ease-in-out;
+            transition-duration: 2s;
+        }
+
+
+        .password-info{
+            display: none;
+            position: absolute;
+            transition-duration: 2s;
+            max-width: 350px;
+            background-color: #cccccc49;
+            padding: 10px 10px;
+            border-radius: 15px;
+            right: 25px;
+            top: 25px;
+        }
+
+        .password-info h6{
+            font-size: 16px;
+            font-weight: 600;
+            color: #d48e3d;
+        }
+
+
+        .password-info li{
+            font-weight: 600;
+            color: #ccc;
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+
+        .password-info b{
+            color: rgb(127, 231, 127);
+            margin-left: 5px;
+            font-size: 17px;
+        }
+
 
         .footer{
             position: fixed;
@@ -159,13 +202,27 @@
                     <div class="input-group">
                         <!-- <label for="password">Password</label> -->
                          <div class="password-input-container">                          
+                         
+                            <i class="bi bi-info-circle"></i>
+                            <div class="password-info">
+                             <h6>Strong Password Guidelines:</h6>
+                             <ul>
+                                 <li>At least 12 characters long <b id="characterMark"></b></li>
+                                 <li>Contains at least one uppercase letter <b id="upppercaseMark"></b></li>
+                                 <li>Contains at least one lowercase letter <b id="lowercaseMark"></b></li>
+                                 <li>Contains at least one number <b id="numberMark"></b></li>
+                                 <li>Contains at least one special character (!@#$%^&amp;*) <b id="specialcharacterMark"></b></li>
+                                 <li> Not a word that can be found in a dictionary or the name of a person, character, product, or organization.</li>
+                             </ul>
+                            </div> 
+
                         <input type="password" id="passwordInput" placeholder="Enter your password">
                         <button id="openPassword" ><i class="bi bi-eye-slash-fill"></i> </button> 
                         <button id="closePassword" > <i class="bi bi-eye-fill"></i> </button> 
                          </div>
                         <div class="strength-level-warning" id="strengthLevelWarning"></div>
-                        <div class="strength-level-danger" id=""></div>
-                        <div class="strength-level-success"></div>
+                        <div class="strength-level-danger" id="strengthLevelDanger"></div>
+                        <div class="strength-level-success" id="strengthLevelSuccess"></div>
                     </div>
                    </div> 
 
