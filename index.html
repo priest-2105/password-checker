@@ -29,6 +29,30 @@
 
         }
 
+
+        
+        .input-group{
+            display: block;
+        }
+
+        .input-group input{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+            background-color: transparent;
+        }
+
+        .input-group input:hover, .input-group input:active{
+        background-color: transparent;
+        border: none ;
+        border-bottom: 1px solid #ccc;
+
+    }
+
+
+
         .footer{
             position: fixed;
             bottom: 0;
@@ -71,8 +95,8 @@
                     <h1>Password Strength Checker</h1>
                     
                     <div class="input-group">
-                        <label for="password">Password</label>
-                        <input type="password">
+                        <!-- <label for="password">Password</label> -->
+                        <input type="password" id="passwordInput" placeholder="Enter your password">
                         <div class="strength-level-info">Password is Strong !</div>
                     </div>
                    </div> 
