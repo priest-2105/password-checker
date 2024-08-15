@@ -6,7 +6,59 @@
     <title>Password Strength Checker</title>
 
 
-    
+    <style>
+
+        .body{
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background: rgb(22,54,119);
+            background: linear-gradient(167deg, rgba(22,54,119,1) 11%, rgba(94,78,31,1) 46%, rgba(27,67,144,0.9654236694677871) 100%);
+        }
+
+        h1{
+            color: rgb(160, 186, 209);
+        }
+
+
+        .body-inner{
+        
+            margin-top: -15%;
+
+        }
+
+        .footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background: rgba(8, 22, 51, 0.164);
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            transition: background 0.3s ease;
+        }
+
+        .footer a{
+            color: rgb(50, 161, 175);
+            margin: 0 20px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .footer a:hover{
+            font-weight: 500;
+            transition: color 0.3s ease;
+            color: rgb(31, 136, 40);
+        }
+
+
+
+    </style>
 
 </head>
 
@@ -15,6 +67,7 @@
 
 
                 <div class="body">
+                   <div class="body-inner"> 
                     <h1>Password Strength Checker</h1>
                     
                     <div class="input-group">
@@ -22,9 +75,18 @@
                         <input type="password">
                         <div class="strength-level-info">Password is Strong !</div>
                     </div>
+                   </div> 
 
+            
+                   <div class="footer">
+                    <p>��  Created by <a target="_blank" href="https://github.com/priest-2105"> Fawaz Bailey</a>. All rights reserved.</p>
                 </div>
+            
+            
+            </div>
                
+
+              
 
 
     <script src="./super.js"></script>
