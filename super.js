@@ -77,14 +77,7 @@ function evaluatePasswordStrength() {
         
         passwordInput.select();
         passwordInput.setSelectionRange(0, 99999);
-        document.execCommand('copy');
-
-        // Hide the password again
-        passwordInput.type = 'password';
-
-        copyclipboardcheck.style.display = 'block';
-        copyclipboard.style.display = 'none';
-    }
+        document.execCommand(
 
     copyclipboardcheck.onclick = () => {
         // Temporarily show the password
