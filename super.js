@@ -70,35 +70,4 @@ function evaluatePasswordStrength() {
 
 
     
-
-    copyclipboard.onclick = () => {
-        // Temporarily show the password
-        passwordInput.type = 'text';
-        
-        passwordInput.select();
-        passwordInput.setSelectionRange(0, 99999);
-        document.execCommand('copy');
-
-        // Hide the password again
-        passwordInput.type = 'password';
-
-        copyclipboardcheck.style.display = 'block';
-        copyclipboard.style.display = 'none';
-    }
-
-    copyclipboardcheck.onclick = () => {
-        // Temporarily show the password
-        passwordInput.type = 'text';
-
-        passwordInput.select();
-        passwordInput.setSelectionRange(0, 99999);
-        document.execCommand('copy');
-
-        // Hide the password again
-        passwordInput.type = 'password';
-    }
-
-}
-
-// Attach the event listener for input events
-passwordInput.addEventListener('input', evaluatePasswordStrength);
+ 
